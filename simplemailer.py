@@ -17,7 +17,7 @@ subject = prompt("Subject: ")
 print("Enter message, end with ^D (Unix) or ^Z (Windows):")
 
 # Add the 'From' and 'To' headers at the start
-msg = ("From: %s\r\nTo: %s\r\nSubject: %s\r\n\r\n" % (mailfrom, ", ".join(maildest), ", ".join(subject)))
+msg = ("From: %s\r\nTo: %s\r\nSubject: %s\r\n\r\n" % (mailfrom, ", ".join(maildest), subject))
 while True:
     try:
         line = input()
