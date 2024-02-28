@@ -13,7 +13,7 @@ def prompt(val):
 # Retrieve the mail parameters
 mailfrom = prompt("From: ")
 maildest = prompt("Dest: ").split()
-subject = prompt("Subject: ").split()
+subject = prompt("Subject: ")
 print("Enter message, end with ^D (Unix) or ^Z (Windows):")
 
 # Add the 'From' and 'To' headers at the start
